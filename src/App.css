@@ -1,38 +1,173 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  background: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header-gradient {
+  display: flex;
+  width: 70%;
+  height: 800px; 
+  background: rgb(56,50,148);
+  background: linear-gradient(180deg, rgba(56,50,148,1) 62%, rgba(19,100,168,1) 100%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sub-gradient {
+  margin-top: auto ;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 90%;
+  background: rgb(41,35,133);
+  background: linear-gradient(180deg, rgba(41,35,133,1) 62%,rgba(19,100,168,1) 100%);
+}
+
+.title{
+  letter-spacing: 5px;
+  font-Size: 32px;
+  padding-Top: 2em ; 
+  padding-Bottom: 1em; 
+  -webkit-text-stroke-width: 3px ;
+}
+
+.cuadro {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cuadro1 {
+  display: flex;
+  width: 80%;
+  margin:  0px auto;
+  justify-content: space-between;
+}
+
+.inp {
+  display:flex ; 
+  text-align: center ; 
+  margin-left: -15px ;
+  outline: 0px ;
+  width: 5em ;
+  background: none ;
+  border: none ;
+  color: white ;
+  font-size: 25px ;
+  -webkit-text-stroke-width: 3px 
+}
+
+.slider {
+  width: 70%;
+  display: flex;
+  margin: 1em auto;
+  padding-bottom: 2em;
+}
+
+.borde{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5em;
+  width: 9em;
+  padding:  auto 15px;
+  border: 1px white solid;
+}
+
+.borde h2{
+  padding-Left: 1em ;
+  padding-Right: 0% ;
+  -webkit-text-stroke-width: 2px 
+}
+
+.cuotas{
+  background: rgb(41,35,133);
+  width: 80%;
+  height: 2.5em;
+  margin: auto ;
+  margin-top: 2em;
+  display: flex ;
+  align-items: center;
+  justify-content: space-around;
+  font-size: large;
+  letter-spacing: 2px;
+  -webkit-text-stroke-width: 2px
+}
+
+.plazo{
+  display:flex ; 
+  text-align: center ; 
+  outline: 0px ;
+  width: 5em ;
+  background: none ;
+  border: none ;
+  color: white ;
+  font-size: 25px ;
+  -webkit-text-stroke-width: 3px 
+}
+
+.cuotaNumero{
+  letter-spacing: 4px;
+  font-size: 2em;
+  -webkit-text-stroke-width: 5px
+}
+
+.botones{
+  display: flex;
+  height: 60px;
+  width: 80%;
+  margin: auto;
+  padding: 0%;
+}
+
+.btn1{
+  outline: none;
+  position: relative;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  color: white;
+  background: lightseagreen;
+  width: 70%;
+  margin-right: 5px;
+  letter-spacing: 2px;
+  -webkit-text-stroke-width: 1px 
+}
+
+.btn2{
+  outline: none;
+  position: relative;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  background: rgba(19,100,168,1);
+  color: white;
+  width: 30%;
+  letter-spacing: 2px;
+  -webkit-text-stroke-width: 1px 
+}
+
+.btn2:active {
+  transform: translateY(4px);
+  background: rgba(41,35,133,1)
+}
+
+.btn1:active {
+  transform: translateY(4px);
+  background: rgba(41,35,133,1)
+}
+
+.rc-slider-mark-text{
+  color: white;
+  font-size: large;
+  font-weight:600;
+  margin-top: 0.3em;
 }
